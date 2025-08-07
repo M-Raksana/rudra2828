@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Rudra Fashion Store</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+    /* Color palette based on Royal Orange variants: #F2913A confirmed as “Royal Orange” :contentReference[oaicite:0]{index=0} */
+    body {
+      font-family: Arial, sans-serif;
+      background: #F2913A;
+      margin: 0;
+      padding: 0;
+      color: #1B4556;
+    }
+
+    /* Box for header only */
+    .header-box {
+      background: #D67732; /* darker royal orange */
+      border: 4px solid #1B4556;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      margin: 20px;
+      border-radius: 8px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+
+    /* Box for navigation only */
+    .nav-box-container {
+      background: #FFAC39; /* lighter accent */
+      border: 3px solid #D67732;
+      padding: 15px;
+      text-align: center;
+      margin: 0 20px 30px;
+      border-radius: 12px;
+    }
+
+    .nav-box {
+      display: inline-block;
+      margin: 0 12px;
+      background: #fff;
+      border: 2px solid #D67732;
+      border-radius: 8px;
+      padding: 8px 16px;
+      transition: background 0.3s;
+    }
+    .nav-box a {
+      text-decoration: none;
+      color: #D67732;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .nav-box:hover {
+      background: #D67732;
+    }
+    .nav-box:hover a {
+      color: #fff;
+    }
+
+    .heading-box {
+      background: #FFAD50;
+      color: #1B4556;
+      border: 3px solid #D67732;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 0 20px 40px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 0 20px 40px;
+      flex-wrap: wrap;
+    }
+    .photo-box {
+      flex: 1 1 300px;
+      background: #fff;
+      border: 3px solid #D67732;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      padding-bottom: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .photo-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+    .photo-box img {
+      width: 100%;
+      display: block;
+      border-bottom: 3px solid #D67732;
+    }
+    .photo-box p {
+      margin: 12px 0;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #D67732;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      background: #1B4556;
+      color: #fff;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">🧵 Rudra Fashion Store 🛍️</div>
+
+  <div class="nav-box-container">
+    <div class="nav-box"><a href="home.html">🏠 Home</a></div>
+    <div class="nav-box"><a href="saree.html">👗 Saree</a></div>
+    <div class="nav-box"><a href="shirt.html">👔 Shirt</a></div>
+    <div class="nav-box"><a href="kurti.html">👘 Kurti</a></div>
+  </div>
+
+  <div class="heading-box">✨ Elegant Dress Display ✨</div>
+
+  <div class="photo-row">
+    <div class="photo-box">
+      <img src="./images/front1.jpg" alt="Boutique interior 1">
+      <p>🌟 Lux boutique with curated saree display</p>
+    </div>
+    <div class="photo-box">
+      <img src="./images/front2.jpg" alt="Boutique interior 2">
+      <p>💫 Designer sarees elegantly showcased</p>
+    </div>
+    <div class="photo-box">
+      <img src="./images/front3.jpg" alt="Boutique interior 3">
+      <p>🧥 Bright showroom with mannequin styling</p>
+    </div>
+  </div>
+
+  <footer>© Rudra Fashion Store. All rights reserved.</footer>
+
+</body>
+</html>
